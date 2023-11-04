@@ -1,0 +1,34 @@
+﻿@page
+@model iPortfolio.Pages.myadmin.AddSkillModel
+@{
+}
+
+<div class="container">
+    <form method="post">
+        <div class="row  justify-content-center">
+            <div class="col-md-4">
+                <h1>Add Skill</h1>
+            </div>
+        </div>
+        <div class="row  justify-content-center">
+            <div class="col-md-4">
+                <label class="form-label">Name</label>
+                <input class="form-control" asp-for="skill.Name">
+            </div>
+        </div>
+        <div class="row  justify-content-center">
+            <div class="col-md-4">
+                <label class="form-label">Percentage</label>
+                <input class="form-control" asp-for="skill.Percentage">
+            </div>
+        </div>
+      
+
+
+        <div class="row  justify-content-center">
+            <div class="col-md-4">
+                <input type="submit" value="Add Skill" class="btn btn-primary">
+            </div>
+        </div>
+    </form>
+</div>

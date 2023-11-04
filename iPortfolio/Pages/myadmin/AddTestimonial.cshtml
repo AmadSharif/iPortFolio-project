@@ -1,0 +1,43 @@
+﻿@page
+@model iPortfolio.Pages.myadmin.AddTestimonialModel
+@{
+}
+<div class="container">
+    <form method="post" enctype="multipart/form-data">
+        <div class="row  justify-content-center">
+            <div class="col-md-4">
+                <h1>Add Testimonial</h1>
+            </div>
+        </div>
+        <div class="row  justify-content-center">
+            <div class="col-md-4">
+                <label class="form-label">Name</label>
+                <input class="form-control" asp-for="testimonial.Name">
+            </div>
+        </div>
+        <div class="row  justify-content-center">
+            <div class="col-md-4">
+                <label class="form-label">Designation</label>
+                <input class="form-control" asp-for="testimonial.Designation">
+            </div>
+        </div>
+        <div class="row  justify-content-center">
+            <div class="col-md-4">
+                <label class="form-label">theTestimonial</label>
+                <input class="form-control" asp-for="testimonial.theTestimonial">
+            </div>
+        </div>
+       
+        <div class="row  justify-content-center">
+            <div class="col-md-4">
+                <label class="form-label">Image :</label>
+                <input class="form-control" asp-for="testimonial.Photo">
+            </div>
+        </div>
+        <div class="row  justify-content-center">
+            <div class="col-md-4">
+                <input type="submit" value="Add Testimonial" class="btn btn-primary">
+            </div>
+        </div>
+    </form>
+</div>

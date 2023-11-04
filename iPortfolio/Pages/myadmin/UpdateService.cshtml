@@ -1,0 +1,39 @@
+﻿@page
+@model iPortfolio.Pages.myadmin.UpdateServiceModel
+@{
+}
+<div class="container">
+    <form method="post">
+        <div class="row  justify-content-center">
+            <div class="col-md-4">
+                <h1>Update Services</h1>
+            </div>
+        </div>
+        <div class="row  justify-content-center">
+            <div class="col-md-4">
+                <label class="form-label">Title</label>
+                <input class="form-control" asp-for="service.Title">
+                <input class="form-control"hidden  asp-for="service.Id">
+            </div>
+        </div>
+        <div class="row  justify-content-center">
+            <div class="col-md-4">
+                <label class="form-label">Description</label>
+                <input class="form-control" asp-for="service.Desc">
+            </div>
+        </div>
+        <div class="row  justify-content-center">
+            <div class="col-md-4">
+                <label class="form-label">IconName</label>
+                <input class="form-control" asp-for="service.IconName">
+            </div>
+        </div>
+
+
+        <div class="row  justify-content-center">
+            <div class="col-md-4">
+                <input type="submit" value="Update Service" class="btn btn-primary">
+            </div>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,50 @@
+﻿@page
+@model iPortfolio.Pages.myadmin.UpdateSocialNetworksModel
+@{
+}
+
+<div class="container">
+    <form method="post">
+        <div class="row  justify-content-center">
+            <div class="col-md-4">
+                <h1>Update SocialNetworks</h1>
+            </div>
+        </div>
+        <div class="row  justify-content-center">
+            <div class="col-md-4">
+                <label class="form-label">Facebook</label>
+                <input class="form-control" asp-for="socialNetworks.Facebook">
+                <input class="form-control" hidden asp-for="socialNetworks.Id">
+            </div>
+        </div>
+        <div class="row  justify-content-center">
+            <div class="col-md-4">
+                <label class="form-label">Twitter</label>
+                <input class="form-control" asp-for="socialNetworks.Twitter">
+            </div>
+        </div>
+        <div class="row  justify-content-center">
+            <div class="col-md-4">
+                <label class="form-label">LinkedIn</label>
+                <input class="form-control" asp-for="socialNetworks.LinkedIn">
+            </div>
+        </div>
+        <div class="row  justify-content-center">
+            <div class="col-md-4">
+                <label class="form-label">Instagram</label>
+                <input class="form-control" asp-for="socialNetworks.Instagram">
+            </div>
+        </div>
+        <div class="row  justify-content-center">
+            <div class="col-md-4">
+                <label class="form-label">Skype</label>
+                <input class="form-control" asp-for="socialNetworks.Skype">
+            </div>
+        </div>
+        <div class="row  justify-content-center">
+            <div class="col-md-4">
+                <input type="submit" value="Update SocialNetworks" class="btn btn-primary">
+            </div>
+        </div>
+    </form>
+</div>

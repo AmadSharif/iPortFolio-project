@@ -1,0 +1,91 @@
+﻿@page
+@model iPortfolio.Pages.myadmin.AddProfileModel
+@{
+}
+<div class="container">
+    <form method="post" enctype="multipart/form-data">
+        <div class="row  justify-content-center">
+            <div class="col-md-4">
+                <h1>Add Profile</h1>
+            </div>
+        </div>
+        <div class="row  justify-content-center">
+            <div class="col-md-4">
+                <label class="form-label">Name</label>
+                <input class="form-control" asp-for="profile.Name">
+            </div>
+        </div>
+        <div class="row  justify-content-center">
+            <div class="col-md-4">
+                <label class="form-label">Birthday</label>
+                <input class="form-control" asp-for="profile.Birthday">
+            </div>
+        </div>
+        <div class="row  justify-content-center">
+            <div class="col-md-4">
+                <label class="form-label">Age</label>
+                <input class="form-control" asp-for="profile.Age">
+            </div>
+        </div>
+        <div class="row  justify-content-center">
+            <div class="col-md-4">
+                <label class="form-label">Website</label>
+                <input class="form-control" asp-for="profile.Website">
+            </div>
+        </div>
+
+        <div class="row  justify-content-center">
+            <div class="col-md-4">
+                <label class="form-label">Degree</label>
+                <input class="form-control" asp-for="profile.Degree">
+            </div>
+        </div>
+        <div class="row  justify-content-center">
+            <div class="col-md-4">
+                <label class="form-label">Phone</label>
+                <input class="form-control" asp-for="profile.Phone">
+            </div>
+        </div>
+        <div class="row  justify-content-center">
+            <div class="col-md-4">
+                <label class="form-label">EMail</label>
+                <input class="form-control" asp-for="profile.EMail">
+            </div>
+        </div>
+        <div class="row  justify-content-center">
+            <div class="col-md-4">
+                <label class="form-label">City</label>
+                <input class="form-control" asp-for="profile.City">
+            </div>
+        </div>
+        <div class="row  justify-content-center">
+            <div class="col-md-4">
+                <label class="form-label">FreelanceStatus</label>
+                <input class="form-control" asp-for="profile.FreelanceStatus">
+            </div>
+        </div>
+        <div class="row  justify-content-center">
+            <div class="col-md-4">
+                <label class="form-label">Description One</label>
+                <input class="form-control" asp-for="profile.DescOne">
+            </div>
+        </div>
+        <div class="row  justify-content-center">
+            <div class="col-md-4">
+                <label class="form-label">Description Two</label>
+                <input class="form-control" asp-for="profile.DescTwo">
+            </div>
+        </div>
+        <div class="row  justify-content-center">
+            <div class="col-md-4">
+                <label class="form-label">Image :</label>
+                <input class="form-control" asp-for="profile.Photo">
+            </div>
+        </div>
+        <div class="row  justify-content-center">
+            <div class="col-md-4">
+                <input type="submit" value="Add Profile" class="btn btn-primary">
+            </div>
+        </div>
+    </form>
+</div>

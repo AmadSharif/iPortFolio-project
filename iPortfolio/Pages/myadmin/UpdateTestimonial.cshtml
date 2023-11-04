@@ -1,0 +1,55 @@
+﻿@page
+@model iPortfolio.Pages.myadmin.ShowTestimonialModel
+@{
+}
+
+<div class="container">
+    <form method="post" enctype="multipart/form-data">
+        <div class="row  justify-content-center">
+            <div class="col-md-4">
+                <h1>Update Testimonial</h1>
+            </div>
+        </div>
+        <div class="row  justify-content-center">
+            <div class="col-md-4">
+                <label class="form-label">Name</label>
+                <input class="form-control" asp-for="testimonial.Name">
+                <input class="form-control" hidden asp-for="testimonial.Id">
+            </div>
+        </div>
+        <div class="row  justify-content-center">
+            <div class="col-md-4">
+                <label class="form-label">Designation</label>
+                <input class="form-control" asp-for="testimonial.Designation">
+            </div>
+        </div>
+        <div class="row  justify-content-center">
+            <div class="col-md-4">
+                <label class="form-label">theTestimonial</label>
+                <input class="form-control" asp-for="testimonial.theTestimonial">
+            </div>
+        </div>
+
+        <div class="row  justify-content-center">
+            <div class="col-md-4">
+                <label class="form-label">Image :</label>
+                <img src="~/imagestestimonial/@Model.testimonial.Image"/>
+
+            </div>
+        </div>
+
+        <div class="row  justify-content-center">
+            <div class="col-md-4">
+                <label class="form-label">Image :</label>
+                <input class="form-control" asp-for="testimonial.Photo">
+                <input class="form-control" hidden asp-for="testimonial.Image">
+
+            </div>
+        </div>
+        <div class="row  justify-content-center">
+            <div class="col-md-4">
+                <input type="submit" value="Update Testimonial" class="btn btn-primary">
+            </div>
+        </div>
+    </form>
+</div>

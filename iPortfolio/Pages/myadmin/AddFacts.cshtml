@@ -1,0 +1,44 @@
+﻿@page
+@model iPortfolio.Pages.myadmin.AddFactsModel
+@{
+}
+
+<div class="container">
+    <form method="post">
+        <div class="row  justify-content-center">
+            <div class="col-md-4">
+                <h1>Add Facts</h1>
+            </div>
+        </div>
+        <div class="row  justify-content-center">
+            <div class="col-md-4">
+                <label class="form-label">Clients</label>
+                <input class="form-control" asp-for="facts.Clients">
+            </div>
+        </div>
+        <div class="row  justify-content-center">
+            <div class="col-md-4">
+                <label class="form-label">Projects</label>
+                <input class="form-control" asp-for="facts.Projects">
+            </div>
+        </div>
+        <div class="row  justify-content-center">
+            <div class="col-md-4">
+                <label class="form-label">Hours</label>
+                <input class="form-control" asp-for="facts.Hours">
+            </div>
+        </div>
+        <div class="row  justify-content-center">
+            <div class="col-md-4">
+                <label class="form-label">Hard Workers</label>
+                <input class="form-control" asp-for="facts.HardWorkers">
+            </div>
+        </div>
+       
+        <div class="row  justify-content-center">
+            <div class="col-md-4">
+                <input type="submit" value="Add Facts" class="btn btn-primary">
+            </div>
+        </div>
+    </form>
+</div>

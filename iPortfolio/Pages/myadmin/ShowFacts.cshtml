@@ -1,0 +1,46 @@
+﻿@page
+@model iPortfolio.Pages.myadmin.ShowFactsModel
+@{
+}
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-12">
+
+            <h1>Show Facts</h1>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Clients</th>
+                        <th scope="col">Projects</th>
+                        <th scope="col">Hours</th>
+                        <th scope="col">Hard Workers</th>
+                      
+                        <th scope="col" colspan="2">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.facts)
+                    {
+                        <tr>
+                            <th scope="row">@item.Id</th>
+                            <td>@item.Clients</td>
+                            <td>@item.Projects</td>
+                            <td>@item.Hours</td>
+                            <td>@item.HardWorkers</td>
+                           
+                            <td>
+                                <a class="btn btn-primary" asp-page="UpdateFacts" asp-route-id="@item.Id">Update</a>
+                            </td>
+                            <td>
+                                <a class="btn btn-danger" asp-page-handler="Delete" asp-route-id="@item.Id">Delete</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</div>
