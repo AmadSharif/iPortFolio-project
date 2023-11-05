@@ -20,10 +20,14 @@ namespace iPortfolio.Pages.myadmin
         public IActionResult OnPost(Education education)
         {
 
-            if(va)
-            db.tbl_Education.Add(education);
-            db.SaveChanges();
-            return RedirectToPage("ShowEducation");    
+            if (ModelState.IsValid)
+            {
+                db.tbl_Education.Add(education);
+                db.SaveChanges();
+                return RedirectToPage("ShowEducation");
+            }
+            return Page();
+              
         }
     }
 }
