@@ -32,9 +32,9 @@ namespace iPortfolio.Pages.myadmin
                 DeleteFile(testimonial.Image);
                 var FolderPath = Path.Combine(env.WebRootPath, "imagestestimonial");
                 var ImagePath = Path.Combine(FolderPath, ImageName);
-                var myFileSteam = new FileStream(ImagePath,FileMode.Create);
-                testimonial.Photo.CopyTo(myFileSteam);
-                myFileSteam.Dispose();
+                var myFileStream = new FileStream(ImagePath,FileMode.Create);
+                testimonial.Photo.CopyTo(myFileStream);
+                myFileStream.Dispose();
                 testimonial.Image = ImageName;
                 db.tbl_Testimonial.Update(testimonial);
                 db.SaveChanges();

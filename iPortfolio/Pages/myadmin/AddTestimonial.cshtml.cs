@@ -2,6 +2,7 @@ using iPortfolio.Data;
 using iPortfolio.Model;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace iPortfolio.Pages.myadmin
 {

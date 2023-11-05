@@ -15,6 +15,7 @@ namespace iPortfolio.Pages
         public List<Experiance> experiance { get; set; }
         public List<Service> service { get; set; }
         public List<Testimonial> testimonial { get; set; }
+        public Contact contact { get; set; }
         public IndexModel(AppDbContext _db)
         {
             db = _db;
@@ -28,6 +29,13 @@ namespace iPortfolio.Pages
             experiance = db.tbl_Experiance.ToList();
             service = db.tbl_Service.ToList();
             testimonial = db.tbl_Testimonial.ToList();
+        }
+
+        public IActionResult OnPost(Contact contact)
+        {
+            db.tbl_Contact.Add(contact);
+            db.SaveChanges();
+            return RedirectToPage("Index");
         }
     }
 }
