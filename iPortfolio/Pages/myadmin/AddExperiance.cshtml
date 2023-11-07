@@ -13,24 +13,30 @@
             <div class="col-md-4">
                 <label class="form-label">Job Title</label>
                 <input class="form-control" asp-for="experiance.JobTitle">
+                <span asp-validation-for="experiance.JobTitle" class="text-danger"></span>
             </div>
         </div>
         <div class="row  justify-content-center">
             <div class="col-md-4">
                 <label class="form-label">Location</label>
                 <input class="form-control" asp-for="experiance.Location">
+                <span asp-validation-for="experiance.Location" class="text-danger"></span>
             </div>
         </div>
         <div class="row  justify-content-center">
             <div class="col-md-4">
                 <label class="form-label">Start Year</label>
                 <input class="form-control" asp-for="experiance.StartYear">
+                <span asp-validation-for="experiance.StartYear" class="text-danger"></span>
+
             </div>
         </div>
         <div class="row  justify-content-center">
             <div class="col-md-4">
                 <label class="form-label">End Year</label>
                 <input class="form-control" asp-for="experiance.EndYear">
+                <span asp-validation-for="experiance.EndYear" class="text-danger"></span>
+
             </div>
         </div>
         
@@ -38,6 +44,8 @@
             <div class="col-md-4">
                 <label class="form-label">Description</label>
                 <input class="form-control" asp-for="experiance.Desc">
+                <span asp-validation-for="experiance.Desc" class="text-danger"></span>
+
             </div>
         </div>
         <div class="row  justify-content-center">
