@@ -18,9 +18,13 @@ namespace iPortfolio.Pages.myadmin
         }
         public IActionResult OnPost(Skill skill)
         {
-            db.tbl_Skill.Add(skill);
-            db.SaveChanges();
-            return RedirectToPage("ShowSkill");
+            if (ModelState.IsValid)
+            {
+                db.tbl_Skill.Add(skill);
+                db.SaveChanges();
+                return RedirectToPage("ShowSkill");
+            }
+                return Page();
         }
     }
 }

@@ -14,12 +14,16 @@
             <div class="col-md-4">
                 <label class="form-label">Name</label>
                 <input class="form-control" asp-for="skill.Name">
+                <span asp-validation-for="skill.Name" class="text-danger"></span>
+
             </div>
         </div>
         <div class="row  justify-content-center">
             <div class="col-md-4">
                 <label class="form-label">Percentage</label>
                 <input class="form-control" asp-for="skill.Percentage">
+                <span asp-validation-for="skill.Percentage" class="text-danger"></span>
+
             </div>
         </div>
       

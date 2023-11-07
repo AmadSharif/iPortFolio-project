@@ -18,9 +18,13 @@ namespace iPortfolio.Pages.myadmin
         }
         public IActionResult OnPost(SocialNetworks socialNetworks)
         {
-            db.tbl_SocialNetworks.Add(socialNetworks);
-            db.SaveChanges();
-            return RedirectToPage("ShowSocialNetworks");
+            if (ModelState.IsValid)
+            {
+                db.tbl_SocialNetworks.Add(socialNetworks);
+                db.SaveChanges();
+                return RedirectToPage("ShowSocialNetworks");
+            }
+           return Page();
         }
     }
 }
