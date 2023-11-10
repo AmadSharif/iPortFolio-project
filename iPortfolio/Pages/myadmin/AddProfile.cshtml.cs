@@ -19,10 +19,13 @@ namespace iPortfolio.Pages.myadmin
         }
         public void OnGet()
         {
+
         }
         public IActionResult OnPost(Profile profile)
         {
-            if (ModelState.IsValid) 
+            
+
+            if (ModelState.IsValid)
             {
                 string ImageName = profile.Photo.FileName.ToString();
                 var FolderPath = Path.Combine(env.WebRootPath, "images");
@@ -33,12 +36,13 @@ namespace iPortfolio.Pages.myadmin
                 profile.Image = ImageName;
                 db.tbl_Profile.Add(profile);
                 db.SaveChanges();
+
             }
             return Page();
-            
-
-
-            
         }
+        
+
+
+
     }
 }

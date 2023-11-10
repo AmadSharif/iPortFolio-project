@@ -19,7 +19,7 @@ namespace iPortfolio.Model
         [Required(ErrorMessage = "Please Enter Degree")]
 
         public string Degree { get; set; }
-        [Phone (ErrorMessage = "Please Enter Phone")]
+        [Phone(ErrorMessage = "Please Enter Phone")]
 
         public string Phone { get; set; }
         [EmailAddress(ErrorMessage = "Please Enter Email")]
@@ -42,5 +42,10 @@ namespace iPortfolio.Model
 
         [NotMapped]
         public IFormFile? Photo { get; set; }
+
+
+
+
+
     }
 }
